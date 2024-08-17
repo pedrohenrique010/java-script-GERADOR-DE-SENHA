@@ -69,3 +69,11 @@
             width: 50%;
             margin: 0 auto;
             }
+            label{
+                font-size: 20px;
+            }
+            .checkbox{
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
