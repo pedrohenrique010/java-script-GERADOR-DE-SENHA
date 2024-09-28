@@ -31,3 +31,42 @@ functiondiminuiTamanho(){
         numeroSenha.textcontent = tamanhoSenha;
         gerasenha();
     }
+    numeroSenha.textcontent=tamanhoSenha;
+gerasenha();
+}
+for (i=0;i <checkbox.length; i++) {
+    checkbox[i].onclick = gerasenha;
+
+}
+gerasenha();
+functiongeraSenha(){
+    let alfabeto = ";
+    if (checkbox[0].checked){
+        alfabeto = alfabeto + letrasMaiusculas;
+
+}
+if (checkbox[1].checked){
+    alfabeto = alfabeto + letrasMinusculas;
+}
+if (checkbox[2].checked){
+    alfabeto = alfabeto + numeros;
+}
+if (checkbox[3].checked){
+    alfabeto = alfabeto + simbolos;
+}
+let senha=";
+for (let i =0; i <tamanhoSenha;i++){
+    letnumeroaleatorio = math.random() * alfabeto.length;
+    numeroaleatorio = math.floor(numeroaleatorio);
+    senha = senha + alfabeto[numeroAleatrio];
+}
+campoSenha.value = senha;
+classifica();
+
+functionclassificaSenha(){
+    forcaSenha.claslist.remove('fraca','media''forte');
+
+
+    }
+}
+
